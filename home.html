@@ -9,20 +9,6 @@
     <div class="base-container">
       <nav class="page-nav">
         <div class="links-block">
-          <!-- <a
-            class="state-node"
-            href="https://singleneuron.substack.com"
-            target="_blank"
-            rel="noopener"
-            >[ Blog ]</a
-          >
-          <a
-            class="state-node"
-            href="https://x.com/AliRMalik_"
-            target="_blank"
-            rel="noopener"
-            >[ X ]</a
-          > -->
           <a
             class="state-node"
             href="https://github.com/malik-ali"
@@ -30,13 +16,6 @@
             rel="noopener"
             >[ GitHub ]</a
           >
-          <!-- <a
-            class="state-node"
-            href="https://scholar.google.com/citations?user=9hETCsoAAAAJ"
-            target="_blank"
-            rel="noopener"
-            >[ Scholar ]</a
-          > -->
         </div>
       </nav>
 
@@ -71,15 +50,6 @@
               <br /><br />
               Bachelor in Computer Science and Engineering from University of
               Hafr Al Batin.
-
-              <!-- <br />
-              Co-creator of
-              <a
-                href="https://codeinplace.stanford.edu/"
-                target="_blank"
-                rel="noopener"
-                >[Code in Place]</a
-              >.-->
               <br /><br />
               <strong>Research interests:</strong> HCI · AI-Assisted Learning ·
               CS Education · Learning Sciences · Machine Learning
@@ -107,53 +77,7 @@
                     rel="noopener"
                     >[PDF]</a
                   >
-
-                  <!-- <a
-                    href="https://github.com/malik-ali/tarzan2tolkien"
-                    target="_blank"
-                    rel="noopener"
-                    >[Code]</a
-                  > -->
-                  <!-- <a
-                    href="#thesis-overview"
-                    class="overview-link"
-                    data-overview-id="thesis-overview"
-                    >[overview]</a
-                  > -->
                 </div>
-                <!-- Overview popup for the thesis
-                <div
-                  id="thesis-overview"
-                  class="overview-overlay"
-                  aria-hidden="true"
-                >
-                  <div class="overview-dialog" role="dialog" aria-modal="true">
-                    <button
-                      class="overview-close"
-                      type="button"
-                      aria-label="Close overview"
-                    >
-                      ×
-                    </button>
-
-                    <h3>
-                      The Impact of Prompt Quality on Learning with Large
-                      Language Models
-                    </h3>
-
-                    <p>
-                      This study examines how prompt quality—structure, clarity,
-                      and cognitive framing—shapes learning outcomes when using
-                      LLMs like GPT or LLaMA. Through controlled experiments
-                      comparing different prompt types, the research shows how
-                      well-designed prompts can produce deeper explanations,
-                      better understanding, and stronger knowledge retention,
-                      while poor prompts often lead to shallow or misleading
-                      learning.
-                    </p>
-                  </div>
-                </div> -->
-
                 <div class="pub-authors">
                   A. Alshammari <strong>·</strong> Supervised by A. A. Haruna
                 </div>
@@ -182,13 +106,6 @@
                     rel="noopener"
                     >[Code]</a
                   >
-
-                  <!-- <a
-                    href="https://github.com/malik-ali/tarzan2tolkien"
-                    target="_blank"
-                    rel="noopener"
-                    >[Code]</a
-                  > -->
                   <a
                     href="#thesis-overview"
                     class="overview-link"
@@ -196,7 +113,6 @@
                     >[overview]</a
                   >
                 </div>
-                <!-- Overview popup for the thesis -->
                 <div
                   id="thesis-overview"
                   class="overview-overlay"
@@ -264,7 +180,6 @@
                     >[overview]</a
                   >
                 </div>
-                <!-- Overview popup for the course -->
                 <div
                   id="course-overview"
                   class="overview-overlay"
@@ -323,7 +238,6 @@
                     >[overview]</a
                   >
                 </div>
-                <!-- Overview popup for the course -->
                 <div
                   id="course-overview"
                   class="overview-overlay"
@@ -381,7 +295,6 @@
                     >[overview]</a
                   >
                 </div>
-                <!-- Overview popup for the course -->
                 <div
                   id="course-overview"
                   class="overview-overlay"
@@ -442,7 +355,6 @@
           el.classList.remove("is-open");
         }
 
-        // Open on [overview] click
         overviewLinks.forEach((link) => {
           link.addEventListener("click", function (e) {
             e.preventDefault();
@@ -455,16 +367,13 @@
           });
         });
 
-        // Close on outside click + close button
         overlays.forEach((overlay) => {
-          // click outside dialog
           overlay.addEventListener("click", function (e) {
             if (e.target === this) {
               closeOverview(this);
             }
           });
 
-          // click on × button
           const closeBtn = overlay.querySelector(".overview-close");
           if (closeBtn) {
             closeBtn.addEventListener("click", function () {
@@ -473,7 +382,6 @@
           }
         });
 
-        // Optional: close on Escape key
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape" || e.key === "Esc") {
             overlays.forEach((overlay) => overlay.classList.remove("is-open"));
